@@ -1,0 +1,82 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  height: 100%;
+  width: 270px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: inset -1px 0px 0px 0px rgb(0 0 0 / 20%), inset -2px 0px 3px 0px rgb(0 0 0 / 15%);
+  text-align:center;
+  background-color: rgb(236, 236, 236);
+}
+
+#title {
+  font-size: 2em;
+}
+
+#navbar ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #000000;
+}
+
+#navbar li {
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  border-top: 1px solid #000000;
+}
+
+#navbar a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  text-align: left;
+  padding-left: 40px;
+}
+
+#navbar a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+#main-doc {
+  overflow: hidden;
+  margin-left: 270px;
+  padding: 0px 20px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    overflow: hidden;
+    position: static;
+    height: 242px;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+  }
+
+  #navbar ul {
+    padding: 0;
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  #main-doc {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  #navbar a {
+    text-align: center;
+  }
+}
